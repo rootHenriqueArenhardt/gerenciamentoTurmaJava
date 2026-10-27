@@ -1,13 +1,18 @@
-# gerenciamentoTurmaJava
-Sistema em Java para gerenciamento de turmas, alunos, notas e frequência, desenvolvido com foco em Orientação a Objetos e boas práticas de arquitetura.
+## Getting Started
 
-Funcionalidades
-Cadastro de Alunos: Adição, remoção e listagem de estudantes.
-Gerenciamento de Turmas: Criação e organização de turmas por disciplinas/semestres.
-Lançamento de Notas e Frequência: Registro de avaliações e controle de presença.
-Cálculo de Média: Verificação automática de aprovação, reprovação ou recuperação com base nas notas cadastradas.
-Persistência de Dados: Salvamento das informações em arquivos locais .dat.
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
-Tecnologias Utilizadas
-Linguagem: Java LTS 25
-Paradigma: Orientação a Objetos (POO)
+## Folder Structure
+
+The workspace contains two folders by default, where:
+
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
+
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
+## Dependency Management
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
