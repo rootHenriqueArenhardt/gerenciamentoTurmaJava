@@ -8,8 +8,6 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-import javax.print.DocFlavor.READER;
-
 import turma.Aluno;
 
 public class Repositorio implements Serializable {
@@ -20,12 +18,12 @@ public class Repositorio implements Serializable {
         alunos = new ArrayList<Aluno>();
     }
 
-    public void salvar(String caminho, ArrayList<Aluno> lista) throws IOException {
+    public void salvar(String caminho) throws IOException {
 
         ObjectOutputStream saida = new ObjectOutputStream(new FileOutputStream(caminho));
 
         try {
-            saida.writeObject(lista);
+            saida.writeObject(alunos);
         } finally {
             saida.close();
         }
@@ -48,13 +46,29 @@ public class Repositorio implements Serializable {
             throw new IllegalArgumentException("ERRO! Aluno Invalido");
         }
 
-            this.alunos.add(aluno);
+            alunos.add(aluno);
+
+    }
+
+    public void removerAluno(int indice){
+
+        Aluno alunoAtual = alunos.get(indice);
+
+            alunos.remove(alunoAtual);
 
     }
 
     public int getSizeAlunos(){
 
-        return this.alunos.size();
+        return alunos.size();
+
+    }
+
+    public Aluno getAluno(int indiceAluno){
+
+        Aluno alunoAtual = alunos.get(indiceAluno);
+
+        return alunoAtual;
 
     }
 

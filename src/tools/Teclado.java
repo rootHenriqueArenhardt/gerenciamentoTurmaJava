@@ -1,4 +1,4 @@
-package utilitarios;
+package tools;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;

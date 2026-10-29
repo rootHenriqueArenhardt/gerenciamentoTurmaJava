@@ -44,7 +44,7 @@ public class Turma {
         for (int i = 0; i < repositorioAlunos.getSizeAlunos(); i++) {
             Aluno atual = repositorioAlunos.getAluno(i);
             if (matricula.equals(atual.getMatricula())) {
-                alunos.remove(i);
+                repositorioAlunos.removerAluno(i);;
                 return true;
             }
         }
